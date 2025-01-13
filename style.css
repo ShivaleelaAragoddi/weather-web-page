@@ -1,0 +1,75 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    background:#222;
+    background-image:url("sky-blue-nature-weather.jpg") ;
+    font-size: 150%;
+}
+.one{
+    background: #00000000;
+    color: rgb(15, 14, 14);
+    padding: 2em;
+    border-radius: 30px;
+    width:100%;
+    max-width:420px;
+    margin:1em;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin:0.5px ;
+    border-radius: 50%;
+    border:none;
+    height:44px;
+    width: 44px;
+    outline: none;
+    background:#7c7c7c2b ;
+    color: rgb(24, 21, 21);
+    cursor:pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: white;
+    color: rgb(18, 18, 16);
+    font-size: 105%;
+    width: 350px;
+}
+button:hover{
+    background: #7c7c7c2b;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading.......";
+    color:rgb(26, 17, 17);
+    position: absolute;
+    top: 0;
+    left:20px;
+}
+
